@@ -24,14 +24,14 @@
 <br>
 
 	    <br><h3 style="text-align:center;">Application for MJPTBCWR Schools BACKLOG Entrance Test-2022</h3><br>
-<form>
+<form action="" method="get">
 	<table class="table table-bordered">
 <th colspan="3"><b>Personal Details</b></th>
-<tr><td>1.</td><td>Reference ID: </td><td><input type="text" cols="20"></td></tr>
-<tr><td>2.</td><td>Surname: </td><td><input type="text" cols="20"></td></tr>
-<tr><td>3.</td><td>Candidate Name: </td><td><input type="text" cols="20"></td></tr>
-<tr><td>4.</td><td>Father's Name: </td><td><input type="text" cols="20"></td></tr>
-<tr><td>5.</td><td>Mother's Name: </td><td><input type="text" cols="20"></td></tr>
+<tr><td>1.</td><td>Reference ID: </td><td><input type="text" name="ref_id" value="" maxlength="20"></td></tr>
+<tr><td>2.</td><td>Surname: </td><td><input type="text" name="surname" value="" maxlength="40"></td></tr>
+<tr><td>3.</td><td>Candidate Name: </td><td><input type="text" name="cand_name" value="" maxlength="40"></td></tr>
+<tr><td>4.</td><td>Father's Name: </td><td><input type="text" name="father_name" value="" maxlength="40"></td></tr>
+<tr><td>5.</td><td>Mother's Name: </td><td><input type="text" name="mother_name" value="" maxlength="40"></td></tr>
 <tr><td>6.</td><td>Date Of Birth: </td><td><input type="date""></td></tr>
 <tr><td>7.</td><td>Gender: </td><td><input type="radio" name="gender" checked>Male &nbsp <input type="radio" name="gender">Female</td></tr>
 <tr><td>8.</td><td>Address: </td><td><input type="textarea" cols="20"></td></tr>
@@ -43,7 +43,7 @@
 <option>OC/EBC</option>
 <option>SC</option>
 <option>ST</option></select></td></tr>
-<tr><td>12.</td><td>Sub-Caste: </td><td><input type="text"></td></tr>
+<tr><td>12.</td><td>Sub-Caste: </td><td><input type="text" name="sub_caste" value="" maxlength="20"></td></tr>
 <tr><td>13.</td><td>Are you an Orphan: </td><td><input type="radio" name="orphan" checked>Yes &nbsp <input type="radio" name="orphan">No</td></tr>
 <tr><td>14.</td><td>Whether the Annual income of parent/guardian<br> is below 2,00,000/- or 1,50,000/-: </td><td><input type="radio" name="income" checked>Yes&nbsp<input type="radio" name="income">No</td></tr>
 <tr><td>15.</td><td>Aadhar Number: </td><td><input type="text" maxlength="12"></td></tr>
@@ -209,11 +209,11 @@
 <table class="table table-bordered">
 <th colspan="3"><b>19. Payment Details</b></th>
 <tr><td>Fee amount</td><td>Journal Number</td><td>Payment Date</td><tr>
-<tr><td><input type="text"></td><td><input type="text"></td><td><input type="date"></td><tr></table><br><br>
+<tr><td><input type="text"></td><td><input type="text" name="jou_no" value="" maxlength="20"></td><td><input type="date"></td><tr></table><br><br>
 	
 <table class="table table-bordered">
-<th colspan="2"><b>20. School Preference Details</b></th>	<tr><td>Preference 1:</td><td><input type="text"></td>
-	<tr><td>Preference 2:</td><td><input type="text"></td>
+<th colspan="2"><b>20. School Preference Details</b></th>	<tr><td>Preference 1:</td><td><input type="text" name="pref_1" value="" maxlength="40"></td>
+	<tr><td>Preference 2:</td><td><input type="text" name="pref_2" value="" maxlength="40"></td>
 </table>
 
 	</form><br><br>
