@@ -48,11 +48,11 @@ district1,medium5,district5,medium6,district6,medium7,district7,fee,jou_no,date,
 '$district6','$medium7','$district7','$fee','$jou_no','$date','$pref_1','$pref_2','$checkbox')";
 if(mysqli_query($conn,$sql_query))
 {
-  echo"New Details entry inerted successfully!";
+  echo "New Details entry inerted successfully!";
 }
   else
   {
-    "Error:".$sql."".mysqli_error($conn);
+    echo "Error:".$sql."".mysqli_error($conn);
    }
   mysqli_close($conn);
 }
