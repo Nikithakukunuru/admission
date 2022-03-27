@@ -1,19 +1,19 @@
 <?php
 
 $servername = "localhost";
-$username = "username";
-$password = "password";
+$username = "root";
+$password = "";
+$database_name="testdb";
+$conn=mysqli_connect($server_name,$username,$password,$database_name);
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
 
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
-
-$ref_id=$_POST['ref_id'];
+if(isset($_POST['save']))
+{
+  $ref_id=$_POST['ref_id'];
 $surname=$_POST['surname'];
 $cand_name=$_POST['cand_name'];
 $father_name=$_POST['father_name'];
@@ -41,4 +41,6 @@ $date=$_POST['date'];
 $pref+1=$_POST['pref_1'];
 $pref_2=$_POST['pref_2'];
 $checkbox=$_POST['checkbox'];
+
+
 ?>
