@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $database_name="testdb";
-$conn=mysqli_connect($server_name,$username,$password,$database_name);
+$conn=mysqli_connect($servername,$username,$password,$database_name);
 
 
 // Check connection
