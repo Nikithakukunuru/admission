@@ -8,7 +8,8 @@ $conn=mysqli_connect($server_name,$username,$password,$database_name);
 
 
 // Check connection
-if ($conn->connect_error) {
+if ($conn->connect_error) 
+{
   die("Connection failed: " . $conn->connect_error);
 }
 if(isset($_POST['save']))
@@ -42,9 +43,17 @@ $pref+1=$_POST['pref_1'];
 $pref_2=$_POST['pref_2'];
 $checkbox=$_POST['checkbox'];
 $sql_query="INSERT INTO entry_form(ref_id,surname,cand_name,father_name,mother_name,dob,gender,address,email.mobile,sub_caste,orphan,income,adhar,medium1,
-district1,medium5,district5,medium6,district6,medium7,district7,fee,jou_no,date,pref_1,pref_2,checkbox) VALUES('$ref_id','surname','cand_name','father_name',
-'mother_name','dob','gender','address','email','mobile','sub_caste','orphan','income','adhar','medium1','district1','medium5','district5','medium6','district6',
-'medium7','district7','fee','jou_no','date','pref_1','pref_2','checkbox');
-
-
+district1,medium5,district5,medium6,district6,medium7,district7,fee,jou_no,date,pref_1,pref_2,checkbox) VALUES('$ref_id','$surname','$cand_name','$father_name',
+'$mother_name','$dob','$gender','$address','$email','$mobile','$sub_caste','$orphan','$income','$adhar','$medium1','$district1','$medium5','$district5','$medium6',
+'$district6','$medium7','$district7','$fee','$jou_no','$date','$pref_1','$pref_2','$checkbox')";
+if(mysqli_query($conn,$sql_query))
+{
+  echo"New Details entry inerted successfully!";
+}
+  else
+  {
+    "Error:".$sql."".mysqli_error($conn);
+   }
+  mysqli_close($conn);
+}
 ?>
