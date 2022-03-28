@@ -30,65 +30,42 @@
 <tr><td>1.</td><td>Reference ID: </td><td><input type="text" name="ref_id" value="" maxlength="20" required></td></tr>
 <tr><td>2.</td><td>Surname: </td><td><input type="text" name="surname" value="" maxlength="40" required></td></tr>
 <tr><td>3.</td><td>Candidate Name: </td><td><input type="text" name="cand_name" value="" maxlength="40" required></td></tr>
-<tr><td>4.</td><td>Father's Name: </td><td><input type="text" name="father_name" value="" maxlength="40"></td></tr>
-<tr><td>5.</td><td>Mother's Name: </td><td><input type="text" name="mother_name" value="" maxlength="40"></td></tr>
-<tr><td>6.</td><td>Date Of Birth: </td><td><input type="date"" name="dob"></td></tr>
-<tr><td>7.</td><td>Gender: </td><td><input type="radio" name="gender" checked>Male &nbsp <input type="radio" name="gender">Female</td></tr>
-<tr><td>8.</td><td>Address: </td><td><input type="textarea" name="address" value=""></td></tr>
-<tr><td>9.</td><td>e-mail: </td><td><input type="email" name="email" value=""></td></tr>
-<tr><td>10.</td><td>Mobile Number: </td><td><input type="text" name="mobile" value="" maxlength="10"></td>
-</tr>
-<tr><td>11.</td><td>Reservation Category: </td><td><select name="res_cat"><option value="" selected="selected">Select Community</option><option>BC-A</option><option>BC-B</option><option>BC-C</option>
-<option>BC-D</option><option>BC-E</option>
-<option>OC/EBC</option>
-<option>SC</option>
-<option>ST</option></select></td></tr>
-<tr><td>12.</td><td>Sub-Caste: </td><td><input type="text" name="sub_caste" value="" maxlength="20"></td></tr>
-<tr><td>13.</td><td>Are you an Orphan: </td><td><input type="radio" name="orphan" checked>Yes &nbsp <input type="radio" name="orphan">No</td></tr>
-<tr><td>14.</td><td>Whether the Annual income of parent/guardian<br> is below 2,00,000/- or 1,50,000/-: </td><td><input type="radio" name="income" checked>Yes&nbsp<input type="radio" name="income">No</td></tr>
-<tr><td>15.</td><td>Aadhar Number: </td><td><input type="text" name="adhar" value="" maxlength="12"></td></tr>
-</table><br>
+<tr><td>4.</td><td>Father's Name: </td><td><input type="text" name="father_name" value="" maxlength="40" required></td></tr>
+<tr><td>5.</td><td>Mother's Name: </td><td><input type="text" name="mother_name" value="" maxlength="40" required></td></tr>
+<tr><td>6.</td><td>Date Of Birth: </td><td><input type="date"" name="dob" required></td></tr>
+<tr><td>7.</td><td>Gender: </td><td><input type="radio" name="gender" checked required>Male &nbsp <input type="radio" name="gender">Female</td></tr>
+<tr><td>8.</td><td>Address: </td><td><input type="textarea" name="address" value="" required></td></tr>
+<tr><td>9.</td><td>e-mail: </td><td><input type="email" name="email" value="" required></td></tr>
+<tr><td>10.</td><td>Mobile Number: </td><td><input type="text" name="mobile" value="" maxlength="10" required></td></tr>
+<tr><td>11.</td><td>Reservation Category: </td><td><select name="res_cat"><option value="" selected="selected" required>Select Community</option><option>BC-A</option><option>BC-B</option><option>BC-C</option>
+<option>BC-D</option><option>BC-E</option><option>OC/EBC</option><option>SC</option><option>ST</option></select></td></tr>
+<tr><td>12.</td><td>Sub-Caste: </td><td><input type="text" name="sub_caste" value="" maxlength="20" required></td></tr>
+<tr><td>13.</td><td>Are you an Orphan: </td><td><input type="radio" name="orphan" checked required>Yes &nbsp <input type="radio" name="orphan">No</td></tr>
+<tr><td>14.</td><td>Whether the Annual income of parent/guardian<br> is below 2,00,000/- or 1,50,000/-: </td><td><input type="radio" name="income" checked required>Yes&nbsp<input type="radio" name="income">No</td></tr>
+<tr><td>15.</td><td>Aadhar Number: </td><td><input type="text" name="adhar" value="" maxlength="12" required></td></tr></table><br>
 <table class="table table-bordered">
 <thead colspan="3">Examination Center Details</thead>
-<tr><td>16.</td><td>Medium in which candidate desires to appear for the test: </td><td> <input type="radio" name="medium1" checked>English &nbsp 
-	<input type="radio" name="medium1">Telugu</td> </tr>
+<tr><td>16.</td><td>Medium in which candidate desires to appear for the test: </td><td> <input type="radio" name="medium1" checked required>English &nbsp 
+	<input type="radio" name="medium1" required>Telugu</td> </tr>
 <tr><td>17.</td><td>Examination Center/District which candidate desires to appear for the test: </td><td>
-	<select name="district1" id="district1">            <option value="" selected="selected">Select District</option>
-                                            <option value="1701">ADILABAD</option>
-                                             <option value="1729">BHADRADRI (KOTHAGUDEM)</option>
-                                             <option value="1712">HANUMAKONDA</option>
-                                              <option value="1728">HYDERABAD</option>
-                                             <option value="1708">JAGITIAL</option>
-                                             <option value="1715">JANGOAN</option>
-                                            <option value="1714">JAYASHANKAR(BHUPALPALLY)</option>
-                                           <option value="1730">JOGULAMBA(GADWAL)</option>
-                                         <option value="1706">KAMAREDDY</option>
-                                        <option value="1707">KARIMNAGAR</option>
-                                        <option value="1716">KHAMMAM</option>
-                                   <option value="1702">KOMARAMBHEEM(ASIFABAD)</option>
-                                     <option value="1713">MAHABUBABAD</option>
-                                   <option value="1720">MAHABUBNAGAR</option>
-                                   <option value="1703">MANCHERIAL</option>
-                                                      <option value="1725">MEDAK</option>
-                                              <option value="1731">MEDCHAL(MALKAJGIRI)</option>
-                                            <option value="1733">MULUGU</option>
-                                    <option value="1722">NAGARKURNOOL</option>
-                                  <option value="1717">NALGONDA</option>
-                                   <option value="1732">NARAYANPET</option>
-                                      <option value="1704">NIRMAL</option>
-                                        <option value="1705">NIZAMABAD</option>
-                                     <option value="1709">PEDDAPALLY</option>
-                                        <option value="1710">RAJANNA (SIRCILLA)</option>
-                                     <option value="1723">RANGAREDDY(SHAMSHABAD)</option>
-                                  <option value="1726">SANGAREDDY</option>
-                                       <option value="1727">SIDDIPET</option>
-                                          <option value="1718">SURYAPET</option>
-                                       <option value="1724">VIKARABAD</option>
-                                     <option value="1721">WANAPARTHY</option>
-                                          <option value="1711">WARANGAL</option>
-                                   <option value="1719">YADADRI (BHONGIRI)</option>
-                                            </select></td></tr>
-</table><br><br>
+	<select name="district1" id="district1" required> <option value="" selected="selected">Select District</option>
+         <option value="1701">ADILABAD</option><option value="1729">BHADRADRI (KOTHAGUDEM)</option>
+         <option value="1712">HANUMAKONDA</option><option value="1728">HYDERABAD</option>
+         <option value="1708">JAGITIAL</option><option value="1715">JANGOAN</option>
+         <option value="1714">JAYASHANKAR(BHUPALPALLY)</option><option value="1730">JOGULAMBA(GADWAL)</option>
+         <option value="1706">KAMAREDDY</option><option value="1707">KARIMNAGAR</option>
+         <option value="1716">KHAMMAM</option><option value="1702">KOMARAMBHEEM(ASIFABAD)</option>
+         <option value="1713">MAHABUBABAD</option><option value="1720">MAHABUBNAGAR</option>
+         <option value="1703">MANCHERIAL</option><option value="1725">MEDAK</option>
+         <option value="1731">MEDCHAL(MALKAJGIRI)</option><option value="1733">MULUGU</option>
+         <option value="1722">NAGARKURNOOL</option><option value="1717">NALGONDA</option>
+         <option value="1732">NARAYANPET</option><option value="1704">NIRMAL</option>
+         <option value="1705">NIZAMABAD</option><option value="1709">PEDDAPALLY</option>
+         <option value="1710">RAJANNA (SIRCILLA)</option><option value="1723">RANGAREDDY(SHAMSHABAD)</option>
+         <option value="1726">SANGAREDDY</option><option value="1727">SIDDIPET</option>
+         <option value="1718">SURYAPET</option><option value="1724">VIKARABAD</option>
+          <option value="1721">WANAPARTHY</option><option value="1711">WARANGAL</option>
+          <option value="1719">YADADRI (BHONGIRI)</option></select></td></tr></table><br><br>
 	
 <table class="table table-bordered">
 <thead class="thead-dark" colspan="6"><b>18. Education Details:</b></thead>
@@ -96,127 +73,75 @@
 	<td>Select whether the school is Govt./Govt. Aided/ Govt. Recognised</td></tr>
 <tr><td>1. </td><td>2019-2020</td><td>5<sup>th</sup> Class</td><td><select name="medium5"><option value="" selected="selected">Select Medium</option><option value="">English</option><option>Telugu</option></select></td>
 	<td>                                    <select name="district5"><option value="" selected="selected">Select District</option>
-                                            <option value="1701">ADILABAD</option>
-                                             <option value="1729">BHADRADRI (KOTHAGUDEM)</option>
-                                             <option value="1712">HANUMAKONDA</option>
-                                              <option value="1728">HYDERABAD</option>
-                                             <option value="1708">JAGITIAL</option>
-                                             <option value="1715">JANGOAN</option>
-                                            <option value="1714">JAYASHANKAR(BHUPALPALLY)</option>
-                                           <option value="1730">JOGULAMBA(GADWAL)</option>
-                                         <option value="1706">KAMAREDDY</option>
-                                        <option value="1707">KARIMNAGAR</option>
-                                        <option value="1716">KHAMMAM</option>
-                                   <option value="1702">KOMARAMBHEEM(ASIFABAD)</option>
-                                     <option value="1713">MAHABUBABAD</option>
-                                   <option value="1720">MAHABUBNAGAR</option>
-                                   <option value="1703">MANCHERIAL</option>
-                                                      <option value="1725">MEDAK</option>
-                                              <option value="1731">MEDCHAL(MALKAJGIRI)</option>
-                                            <option value="1733">MULUGU</option>
-                                    <option value="1722">NAGARKURNOOL</option>
-                                  <option value="1717">NALGONDA</option>
-                                   <option value="1732">NARAYANPET</option>
-                                      <option value="1704">NIRMAL</option>
-                                        <option value="1705">NIZAMABAD</option>
-                                     <option value="1709">PEDDAPALLY</option>
-                                        <option value="1710">RAJANNA (SIRCILLA)</option>
-                                     <option value="1723">RANGAREDDY(SHAMSHABAD)</option>
-                                  <option value="1726">SANGAREDDY</option>
-                                       <option value="1727">SIDDIPET</option>
-                                          <option value="1718">SURYAPET</option>
-                                       <option value="1724">VIKARABAD</option>
-                                     <option value="1721">WANAPARTHY</option>
-                                          <option value="1711">WARANGAL</option>
-                                   <option value="1719">YADADRI (BHONGIRI)</option>
-                                            </select></td>
-	<td><select name="school5"><option value="" selected="selected">Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
-<tr><td>2. </td><td>2020-2021</td><td>6<sup>th</sup> Class</td><td><select name="medium6" id="medium6"><option value="" selected="selected">Select Medium</option>
-	<option value="">English</option><option value="">Telugu</option></select></td>
+                                            <option value="1701">ADILABAD</option><option value="1729">BHADRADRI (KOTHAGUDEM)</option>
+                                             <option value="1712">HANUMAKONDA</option><option value="1728">HYDERABAD</option>
+                                             <option value="1708">JAGITIAL</option><option value="1715">JANGOAN</option>
+                                            <option value="1714">JAYASHANKAR(BHUPALPALLY)</option><option value="1730">JOGULAMBA(GADWAL)</option>
+                                         <option value="1706">KAMAREDDY</option><option value="1707">KARIMNAGAR</option>
+                                        <option value="1716">KHAMMAM</option><option value="1702">KOMARAMBHEEM(ASIFABAD)</option>
+                                     <option value="1713">MAHABUBABAD</option><option value="1720">MAHABUBNAGAR</option>
+                                   <option value="1703">MANCHERIAL</option><option value="1725">MEDAK</option>
+                                              <option value="1731">MEDCHAL(MALKAJGIRI)</option><option value="1733">MULUGU</option>
+                                    <option value="1722">NAGARKURNOOL</option><option value="1717">NALGONDA</option>
+                                   <option value="1732">NARAYANPET</option><option value="1704">NIRMAL</option>
+                                        <option value="1705">NIZAMABAD</option><option value="1709">PEDDAPALLY</option>
+                                        <option value="1710">RAJANNA (SIRCILLA)</option><option value="1723">RANGAREDDY(SHAMSHABAD)</option>
+                                  <option value="1726">SANGAREDDY</option><option value="1727">SIDDIPET</option>
+                                          <option value="1718">SURYAPET</option><option value="1724">VIKARABAD</option>
+                                     <option value="1721">WANAPARTHY</option><option value="1711">WARANGAL</option>
+                                   <option value="1719">YADADRI (BHONGIRI)</option></select></td>
+	<td><select name="school5"><option value="" selected="selected" required>Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
+<tr><td>2. </td><td>2020-2021</td><td>6<sup>th</sup> Class</td><td><select name="medium6" id="medium6" required><option value="" selected="selected">Select Medium</option>
+	<option value="">English</option><option value="" required>Telugu</option></select></td>
 	<td>                                    <select name="district6"><option value="" selected="selected">Select District</option>
-                                            <option value="1701">ADILABAD</option>
-                                             <option value="1729">BHADRADRI (KOTHAGUDEM)</option>
-                                             <option value="1712">HANUMAKONDA</option>
-                                              <option value="1728">HYDERABAD</option>
-                                             <option value="1708">JAGITIAL</option>
-                                             <option value="1715">JANGOAN</option>
-                                            <option value="1714">JAYASHANKAR(BHUPALPALLY)</option>
-                                           <option value="1730">JOGULAMBA(GADWAL)</option>
-                                         <option value="1706">KAMAREDDY</option>
-                                        <option value="1707">KARIMNAGAR</option>
-                                        <option value="1716">KHAMMAM</option>
-                                   <option value="1702">KOMARAMBHEEM(ASIFABAD)</option>
-                                     <option value="1713">MAHABUBABAD</option>
-                                   <option value="1720">MAHABUBNAGAR</option>
-                                   <option value="1703">MANCHERIAL</option>
-                                                      <option value="1725">MEDAK</option>
-                                              <option value="1731">MEDCHAL(MALKAJGIRI)</option>
-                                            <option value="1733">MULUGU</option>
-                                    <option value="1722">NAGARKURNOOL</option>
-                                  <option value="1717">NALGONDA</option>
-                                   <option value="1732">NARAYANPET</option>
-                                      <option value="1704">NIRMAL</option>
-                                        <option value="1705">NIZAMABAD</option>
-                                     <option value="1709">PEDDAPALLY</option>
-                                        <option value="1710">RAJANNA (SIRCILLA)</option>
-                                     <option value="1723">RANGAREDDY(SHAMSHABAD)</option>
-                                  <option value="1726">SANGAREDDY</option>
-                                       <option value="1727">SIDDIPET</option>
-                                          <option value="1718">SURYAPET</option>
-                                       <option value="1724">VIKARABAD</option>
+                                            <option value="1701">ADILABAD</option><option value="1729">BHADRADRI (KOTHAGUDEM)</option>
+                                             <option value="1712">HANUMAKONDA</option><option value="1728">HYDERABAD</option>
+                                             <option value="1708">JAGITIAL</option><option value="1715">JANGOAN</option>
+                                            <option value="1714">JAYASHANKAR(BHUPALPALLY)</option><option value="1730">JOGULAMBA(GADWAL)</option>
+                                         <option value="1706">KAMAREDDY</option><option value="1707">KARIMNAGAR</option>
+                                        <option value="1716">KHAMMAM</option><option value="1702">KOMARAMBHEEM(ASIFABAD)</option>
+                                     <option value="1713">MAHABUBABAD</option><option value="1720">MAHABUBNAGAR</option>
+                                   <option value="1703">MANCHERIAL</option><option value="1725">MEDAK</option>
+                                              <option value="1731">MEDCHAL(MALKAJGIRI)</option><option value="1733">MULUGU</option>
+                                    <option value="1722">NAGARKURNOOL</option><option value="1717">NALGONDA</option>
+                                   <option value="1732">NARAYANPET</option><option value="1704">NIRMAL</option>
+                                        <option value="1705">NIZAMABAD</option><option value="1709">PEDDAPALLY</option>
+                                        <option value="1710">RAJANNA (SIRCILLA)</option><option value="1723">RANGAREDDY(SHAMSHABAD)</option>
+                                  <option value="1726">SANGAREDDY</option><option value="1727">SIDDIPET</option>
+                                          <option value="1718">SURYAPET</option><option value="1724">VIKARABAD</option>
                                      <option value="1721">WANAPARTHY</option>
                                           <option value="1711">WARANGAL</option>
                                    <option value="1719">YADADRI (BHONGIRI)</option>
                                             </select></td>
-	<td><select name="school6"><option value="" selected="selected">Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
-<tr><td>3. </td><td>2021-2022</td><td>7<sup>th</sup> Class</td><td><select name="medium7" id="medium7"><option value="" selected="selected">Select Medium</option>
+	<td><select name="school6"><option value="" selected="selected" required>Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
+<tr><td>3. </td><td>2021-2022</td><td>7<sup>th</sup> Class</td><td><select name="medium7" id="medium7" required><option value="" selected="selected" required>Select Medium</option>
 	<option value="">English</option><option value="">Telugu</option></select></td>
-	<td>                                    <select name="district7"><option value="" selected="selected">Select District</option>
-                                            <option value="1701">ADILABAD</option>
-                                             <option value="1729">BHADRADRI (KOTHAGUDEM)</option>
-                                             <option value="1712">HANUMAKONDA</option>
-                                              <option value="1728">HYDERABAD</option>
-                                             <option value="1708">JAGITIAL</option>
-                                             <option value="1715">JANGOAN</option>
-                                            <option value="1714">JAYASHANKAR(BHUPALPALLY)</option>
-                                           <option value="1730">JOGULAMBA(GADWAL)</option>
-                                         <option value="1706">KAMAREDDY</option>
-                                        <option value="1707">KARIMNAGAR</option>
-                                        <option value="1716">KHAMMAM</option>
-                                   <option value="1702">KOMARAMBHEEM(ASIFABAD)</option>
-                                     <option value="1713">MAHABUBABAD</option>
-                                   <option value="1720">MAHABUBNAGAR</option>
-                                   <option value="1703">MANCHERIAL</option>
-                                                      <option value="1725">MEDAK</option>
-                                              <option value="1731">MEDCHAL(MALKAJGIRI)</option>
-                                            <option value="1733">MULUGU</option>
-                                    <option value="1722">NAGARKURNOOL</option>
-                                  <option value="1717">NALGONDA</option>
-                                   <option value="1732">NARAYANPET</option>
-                                      <option value="1704">NIRMAL</option>
-                                        <option value="1705">NIZAMABAD</option>
-                                     <option value="1709">PEDDAPALLY</option>
-                                        <option value="1710">RAJANNA (SIRCILLA)</option>
-                                     <option value="1723">RANGAREDDY(SHAMSHABAD)</option>
-                                  <option value="1726">SANGAREDDY</option>
-                                       <option value="1727">SIDDIPET</option>
-                                          <option value="1718">SURYAPET</option>
-                                       <option value="1724">VIKARABAD</option>
-                                     <option value="1721">WANAPARTHY</option>
-                                          <option value="1711">WARANGAL</option>
-                                   <option value="1719">YADADRI (BHONGIRI)</option>
-                                            </select></td>
-	<td><select name="school7"><option value="" selected="selected">Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
-</table><br><br>
-	
-<table class="table table-bordered">
+	<td>                                    <select name="district7"><option value="" selected="selected" required>Select District</option>
+                                            <option value="1701">ADILABAD</option>  <option value="1729">BHADRADRI (KOTHAGUDEM)</option>
+                                             <option value="1712">HANUMAKONDA</option>  <option value="1728">HYDERABAD</option>
+                                             <option value="1708">JAGITIAL</option>      <option value="1715">JANGOAN</option>
+                                            <option value="1714">JAYASHANKAR(BHUPALPALLY)</option><option value="1730">JOGULAMBA(GADWAL)</option>
+                                         <option value="1706">KAMAREDDY</option>  <option value="1707">KARIMNAGAR</option>
+                                        <option value="1716">KHAMMAM</option><option value="1702">KOMARAMBHEEM(ASIFABAD)</option>
+                                     <option value="1713">MAHABUBABAD</option> <option value="1720">MAHABUBNAGAR</option>
+                                   <option value="1703">MANCHERIAL</option>  <option value="1725">MEDAK</option>
+                                              <option value="1731">MEDCHAL(MALKAJGIRI)</option> <option value="1733">MULUGU</option>
+                                    <option value="1722">NAGARKURNOOL</option>  <option value="1717">NALGONDA</option>
+                                   <option value="1732">NARAYANPET</option>        <option value="1704">NIRMAL</option>
+                                        <option value="1705">NIZAMABAD</option>     <option value="1709">PEDDAPALLY</option>
+                                        <option value="1710">RAJANNA (SIRCILLA)</option>  <option value="1723">RANGAREDDY(SHAMSHABAD)</option>
+                                  <option value="1726">SANGAREDDY</option>     <option value="1727">SIDDIPET</option>
+                                          <option value="1718">SURYAPET</option>  <option value="1724">VIKARABAD</option>
+                                     <option value="1721">WANAPARTHY</option>    <option value="1711">WARANGAL</option>
+                                   <option value="1719">YADADRI (BHONGIRI)</option>  </select></td>
+	<td><select name="school7"><option value="" selected="selected" required>Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
+</table><br><br>	<table class="table table-bordered">
 <thead class="thead-dark" colspan="3"><b>19. Payment Details</b></thead>
 <tr><td>Fee amount</td><td>Journal Number</td><td>Payment Date</td><tr>
 <tr><td><input type="text" name="fee" value=""></td><td><input type="text" name="jou_no" value="" maxlength="20"></td><td><input type="date" name="date" value=""></td><tr></table><br><br>
-	
-<table class="table table-bordered">
+	<table class="table table-bordered">
 <thead class="thead-dark" colspan="2"><b>20. School Preference Details</b></thead>	<tr>
-	<td>Preference 1:</td><td><select name="pref_1"><option value="" selected="selected">Select School</option>
+	<td>Preference 1:</td><td><select name="pref_1"><option value="" selected="selected" required>Select School</option>
 	<option>MJPTBCWR School, Nagarkurnool(Girls) Nagarkurnool</option><option>MJPTBCWREIS School, Kowdipally (Boys) Medak</option><option>MJPTBCWR School, Jagadevpur(Girls) Siddipet</option><option>MJPTBCWR School, Kalwakurthy(Girls) Nagarkurnool</option><option>MJPTBCWR School, Kodangal(Boys) Vikarabad</option>
 	<option>MJPTBCWR School, Chityal(Boys) Wanaparthy</option><option>MJPTBCWR School, Maheswaram(Boys) Ranga Reddy</option><option>MJPTBCWR School, Doulathabad(Boys) Siddipet</option><option>MJPTBCWR School, Sangareddy(Girls) Sangareddy</option><option>MJPTBCWR School, Narsapur(Girls) Medak</option>
 	<option>MJPTBCWR SCHOOL BOYS E/M AT KANJAR Nizamabad</option><option>MJPTBCWR School, Luxettipet(Boys) Mancherial </option><option>MJPTBCWR School, Adilabad(Girls) Adilabad</option><option>MJPTBCWR School, LMD Colony(Girls) Karimnagar</option><option>MJPTBCWR School, Kamalapur(Girls) Warangal Urban</option>
@@ -259,7 +184,7 @@
 	<option>MJPTBCWR School, Tandur(Boys) Mancherial district</option><option>MJPTBCWR School, Nawabpet(Boys) Nagarkurnool</option><option>MJPTBCWR School, Kothagudem (Parkal)(Girls) Jayashankar Bhupalapally</option><option>MJPTBCWR School, Uppal(Boys) Medchal Malkajgiri</option><option>MJPTBCWR School, Qutbullapur(Boys) Medchal Malkajgiri</option>
 	<option>MJPTBCWR School, Balanagar(Girls) Medchal Malkajgiri</option><option>MJPTBCWR School, Malkajgiri(Girls) Medchal Malkajgiri</option><option>MJPTBCWR School, Yeldurthy(Girls) Medak</option><option>MJPTBCWR School, Medak(Boys) Medak</option><option>MJPTBCWR School, Bachupalli(Girls) Medak</option>
 	<option>MJPTBCWR School For Boys Gollapally Siddipet</option></select></td></tr><tr>
-	<td>Preference 2:</td><td><select name="pref_2"><option value="" selected="selected">Select School</option>
+	<td>Preference 2:</td><td><select name="pref_2"><option value="" selected="selected" required>Select School</option>
 	<option>MJPTBCWR School, Nagarkurnool(Girls) Nagarkurnool</option><option>MJPTBCWREIS School, Kowdipally (Boys) Medak</option><option>MJPTBCWR School, Jagadevpur(Girls) Siddipet</option><option>MJPTBCWR School, Kalwakurthy(Girls) Nagarkurnool</option><option>MJPTBCWR School, Kodangal(Boys) Vikarabad</option>
 	<option>MJPTBCWR School, Chityal(Boys) Wanaparthy</option><option>MJPTBCWR School, Maheswaram(Boys) Ranga Reddy</option><option>MJPTBCWR School, Doulathabad(Boys) Siddipet</option><option>MJPTBCWR School, Sangareddy(Girls) Sangareddy</option><option>MJPTBCWR School, Narsapur(Girls) Medak</option>
 	<option>MJPTBCWR SCHOOL BOYS E/M AT KANJAR Nizamabad</option><option>MJPTBCWR School, Luxettipet(Boys) Mancherial </option><option>MJPTBCWR School, Adilabad(Girls) Adilabad</option><option>MJPTBCWR School, LMD Colony(Girls) Karimnagar</option><option>MJPTBCWR School, Kamalapur(Girls) Warangal Urban</option>
@@ -302,20 +227,11 @@
 	<option>MJPTBCWR School, Tandur(Boys) Mancherial district</option><option>MJPTBCWR School, Nawabpet(Boys) Nagarkurnool</option><option>MJPTBCWR School, Kothagudem (Parkal)(Girls) Jayashankar Bhupalapally</option><option>MJPTBCWR School, Uppal(Boys) Medchal Malkajgiri</option><option>MJPTBCWR School, Qutbullapur(Boys) Medchal Malkajgiri</option>
 	<option>MJPTBCWR School, Balanagar(Girls) Medchal Malkajgiri</option><option>MJPTBCWR School, Malkajgiri(Girls) Medchal Malkajgiri</option><option>MJPTBCWR School, Yeldurthy(Girls) Medak</option><option>MJPTBCWR School, Medak(Boys) Medak</option><option>MJPTBCWR School, Bachupalli(Girls) Medak</option>
         <option>MJPTBCWR School For Boys Gollapally Siddipet</option></select></td></tr>
-
-</table>
-
-	
-	<br><br><div>
-	<ul><li>
+</table>	<br><br><div> <ul><li>
 	Provide Candidate Valid Mobile Number in Payment Form. Any future Communication (Message Alerts) will be sent to Candidate Mobile Number Only.</li>
 <li>Provide Candidate Valid Name,Mobile Number,Community,Gender and other Details. No Changes are entertained after Payment.</li>
 <li>Candidate alone responsible for any wrong entries (Mobile Number,Community,Gender....) made in the Payment form.</li></ul><br>
  <input type="checkbox" name="checkbox" value="checkbox">&nbsp I Declare that I have read the Prospectus of Admission Test for 2022-2023 and found myself fully eligible to appear for the entrance test as per the criteria mentioned in Prospectus.<br><br>
 	<center><button class="button1" name="save" value="Submit">Submit</button></center><br>
 </div><br><br>
-
-</form>
-	
-</body>
-</html>
+</form></body></html>
