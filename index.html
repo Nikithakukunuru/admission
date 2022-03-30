@@ -41,14 +41,14 @@
 <tr><td>11.</td><td class="required">Reservation Category: </td><td><select name="res_cat"><option value="" selected="selected" required>Select Community</option><option>BC-A</option><option>BC-B</option><option>BC-C</option>
 <option>BC-D</option><option>BC-E</option><option>OC/EBC</option><option>SC</option><option>ST</option></select></td></tr>
 <tr><td>12.</td><td>Sub-Caste: </td><td><input type="text" name="sub_caste" value="" maxlength="20"></td></tr>
-<tr><td>13.</td><td class="required">Are you an Orphan: </td><td><input type="radio" name="orphan" value="0" checked required>Yes &nbsp <input type="radio" name="orphan" value="1">No</td></tr>
+<tr><td>13.</td><td class="required">Are you an Orphan: </td><td><input type="radio" name="orphan" value="1" checked>Yes &nbsp <input type="radio" name="orphan" value="0">No</td></tr>
 <tr><td>14.</td><td class="required">Whether Annual Income of the Parent/Guardian (for Urban) should be below Rs 2 lakhs,(and for Rural)
-should be below Rs 1.5 lakhs.: </td><td><input type="radio" name="income" value="1" checked required>Yes&nbsp<input type="radio" name="income" value="0">No</td></tr>
+should be below Rs 1.5 lakhs.: </td><td><input type="radio" name="income" value="1" checked>Yes&nbsp<input type="radio" name="income" value="0">No</td></tr>
 <tr><td>15.</td><td class="required">Aadhar Number: </td><td><input type="text" name="adhar" value="" maxlength="12" required></td></tr></table><br>
 <table class="table table-bordered">
 <thead colspan="3">Examination Center Details</thead>
-<tr><td>16.</td><td class="required">Medium in which candidate desires to appear for the test: </td><td> <input type="radio" name="medium1" checked required>English &nbsp 
-	<input type="radio" name="medium1" required>Telugu</td> </tr>
+<tr><td>16.</td><td class="required">Medium in which candidate desires to appear for the test: </td><td> <input type="radio" name="medium1" value="English" checked required>English &nbsp 
+	<input type="radio" name="medium1" Value="Telugu">Telugu</td> </tr>
 <tr><td>17.</td><td class="required">Examination Center/District which candidate desires to appear for the test: </td><td>
 	<select name="district1" id="district1" required> <option selected="selected">Select District</option>
          <option>ADILABAD</option><option>BHADRADRI (KOTHAGUDEM)</option>
@@ -73,8 +73,9 @@ should be below Rs 1.5 lakhs.: </td><td><input type="radio" name="income" value=
 <thead class="thead-dark" colspan="6">18. Education Details:</thead>
 <tr><td>Sl.No.</td><td class="required">Year of Study</td><td class="required">Class in which studied/studying</td><td class="required">Medium of Study</td><td class="required">District in which school of study is located</td>
 	<td class="required">Select whether the school is Govt./Govt. Aided/ Govt. Recognised</td></tr>
-<tr><td>1. </td><td>2019-2020</td><td>5<sup>th</sup> Class</td><td><select name="medium5"><option selected="selected">Select Medium</option><option>English</option><option>Telugu</option></select></td>
-	<td>                                    <select name="district5"><option selected="selected">Select District</option>
+<tr><td>1. </td><td>2019-2020</td><td>5<sup>th</sup> Class</td><td><select name="medium5" id="medium5" required><option selected="selected">Select Medium</option>
+<option>English</option><option>Telugu</option></select></td>
+	<td> <select name="district5"><option selected="selected">Select District</option>
                                             <option>ADILABAD</option><option >BHADRADRI (KOTHAGUDEM)</option>
                                              <option>HANUMAKONDA</option><option >HYDERABAD</option>
                                              <option>JAGITIAL</option><option>JANGOAN</option>
@@ -92,9 +93,9 @@ should be below Rs 1.5 lakhs.: </td><td><input type="radio" name="income" value=
                                           <option>SURYAPET</option><option>VIKARABAD</option>
                                      <option>WANAPARTHY</option><option>WARANGAL</option>
                                    <option>YADADRI (BHONGIRI)</option></select></td>
-	<td><select name="school5"><option selected="selected" required>Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
-<tr><td>2. </td><td>2020-2021</td><td>6<sup>th</sup> Class</td><td><select name="medium6" id="medium6" required><option value="" selected="selected">Select Medium</option>
-	<option value="">English</option><option value="" required>Telugu</option></select></td>
+	<td><select name="school5"><option selected="selected">Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
+<tr><td>2. </td><td>2020-2021</td><td>6<sup>th</sup> Class</td><td><select name="medium6" id="medium6" required><option selected="selected">Select Medium</option>
+	<option>English</option><option>Telugu</option></select></td>
 	<td>                                    <select name="district6"><option value="" selected="selected">Select District</option>
                                             <option>ADILABAD</option><option >BHADRADRI (KOTHAGUDEM)</option>
                                              <option>HANUMAKONDA</option><option >HYDERABAD</option>
@@ -113,8 +114,8 @@ should be below Rs 1.5 lakhs.: </td><td><input type="radio" name="income" value=
                                           <option>SURYAPET</option><option>VIKARABAD</option>
                                      <option>WANAPARTHY</option><option>WARANGAL</option>
                                    <option>YADADRI (BHONGIRI)</option></select></td>
-	<td><select name="school6"><option selected="selected" required>Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
-<tr><td>3. </td><td>2021-2022</td><td>7<sup>th</sup> Class</td><td><select name="medium7" id="medium7" required><option value="" selected="selected" required>Select Medium</option>
+	<td><select name="school6"><option selected="selected">Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
+<tr><td>3. </td><td>2021-2022</td><td>7<sup>th</sup> Class</td><td><select name="medium7" id="medium7" required><option selected="selected">Select Medium</option>
 	<option>English</option><option>Telugu</option></select></td>
 	<td>                                    <select name="district7"><option selected="selected" required>Select District</option>
                                             <option>ADILABAD</option><option >BHADRADRI (KOTHAGUDEM)</option>
@@ -134,7 +135,7 @@ should be below Rs 1.5 lakhs.: </td><td><input type="radio" name="income" value=
                                           <option>SURYAPET</option><option>VIKARABAD</option>
                                      <option>WANAPARTHY</option><option>WARANGAL</option>
                                    <option>YADADRI (BHONGIRI)</option></select></td>
-	<td><select name="school7"><option selected="selected" required>Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
+	<td><select name="school7"><option selected="selected">Select School</option><option>Govt.</option><option>Govt. Aided</option><option>Govt.Recognised</option></select></td></tr>
 </table><br><br>	<table class="table table-bordered">
 <thead class="thead-dark" colspan="3">19. Payment Details</thead>
 <tr><td class="required">Fee amount</td><td class="required">Journal Number</td><td class="required">Payment Date</td><tr>
